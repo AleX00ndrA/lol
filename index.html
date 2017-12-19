@@ -1,0 +1,38 @@
+﻿<html> 
+<meta charset="utf-8"> 
+<body> 
+<header> 
+<h1 align="center">Передача пользовательских данных на сервер</h1> 
+</header> 
+<form action="1.php" method="post" enctype="multipart/form-data"> 
+<input type="hidden" name="posted" value="true"> <BR> 
+<p><strong>Введите ваше имя</strong></p> 
+<p><input size="20" type='name' name="name"></p> 
+
+<p><strong>Введите ваше фамилию</strong></p> 
+<p><input size="20" type='name' name="surname"></p> 
+
+<p><strong>Год рождения</strong></p> 
+<select name="select"> 
+<option value="1998">1998</option> 
+<option value="1999">1999</option> 
+<option value="2000">2000</option> 
+<option value="2001">2001</option> 
+</select> 
+
+<p><strong>Образование:</strong></p> 
+<p><input type="radio" name="ob" value="1">Высшее</p> 
+<p><input type="radio" name="ob" value="2"> Средне-специальное</p> 
+<p><input type="radio" name="ob" value="3"> Среднее</p> 
+
+<p><strong>Владение иностраными языками:</strong></p> 
+<p><input name='yaz[0]' type="checkbox" value="итальянский">итальянский</p> 
+<p><input name='yaz[1]' type="checkbox" value="французский"> французский</p> 
+<p><input name='yaz[2]' type="checkbox" value="немецкий">немецкий</p> 
+<p><input name='yaz[3]' type="checkbox" value="английский">английский</p> 
+
+<button type="submit">Отправить</button></p> 
+<p><input type="reset" value="Сбросить данные"></p> 
+</form> 
+</body> 
+</html>
